@@ -1,4 +1,4 @@
-export default function(addon) {
-    console.log(addon);
-    return addon.name.split('/')[0];
+export default function() {
+
+    return this.name.split('/')[0];
 }
