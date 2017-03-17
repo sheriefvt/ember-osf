@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import layout from './template';
-import hostService from 'ember-osf/utils/host-service';
+import ENV from '../../../config/environment';
 
 /**
  * @module ember-osf
@@ -13,6 +13,7 @@ import hostService from 'ember-osf/utils/host-service';
  */
 export default Ember.Component.extend({
     layout,
+    hostName: ENV.App.host,
     currentYear: (new Date()).getUTCFullYear().toString(),
-    hostName: hostService(this)
+
 });
