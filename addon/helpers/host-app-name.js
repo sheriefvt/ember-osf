@@ -12,7 +12,7 @@ import config from 'ember-get-config';
  @class fix-special-char-helper
  @uses fix-special-char
  */
-export function hostAppName() {
+export function hostAppName(params/*, hash*/) {
     console.log(config.APP.host);
     return config.APP.host;
 }
