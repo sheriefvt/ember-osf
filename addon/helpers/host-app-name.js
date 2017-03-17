@@ -13,6 +13,7 @@ import config from 'ember-get-config';
  @uses fix-special-char
  */
 export function hostAppName() {
+    console.log(config.APP.host);
     return config.APP.host;
 }
 
