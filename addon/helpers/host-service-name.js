@@ -13,8 +13,8 @@ import hostServiceName from '../utils/host-service-name';
  @uses host-service-name
  */
 
-export function hostServiceName() {
+export function hostServiceNameHelper() {
     return hostServiceName();
 }
 
-export default Ember.Helper.helper(hostServiceName);
+export default Ember.Helper.helper(hostServiceNameHelper);
