@@ -1,3 +1,5 @@
+import config from 'ember-get-config';
+
 /**
  * @module ember-osf
  * @submodule utils
