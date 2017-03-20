@@ -14,7 +14,7 @@
  * @method hostservicename
  * @return {String}
  */
-function hostServiceName() {
+export default function hostServiceName() {
     return config.modulePrefix;
 }
 
