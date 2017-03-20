@@ -9,7 +9,7 @@ import fixSpecialChar from '../utils/fix-special-char';
     This is text we want to fix: {{fix-special-char 'Now &amp; then'}}
   ```
 
-  @class fix-special-char-helper
+  @class fix-special-cha-helper
   @uses fix-special-char
  */
 export function fixSpecialCharHelper(params/*, hash*/) {
