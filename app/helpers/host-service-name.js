@@ -1,1 +1,1 @@
-export { default, hostServiceName } from 'ember-osf/helpers/host-service-name';
+export { default, hostServiceNameHelper } from 'ember-osf/helpers/host-service-name';
