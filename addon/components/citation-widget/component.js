@@ -2,8 +2,6 @@ import Ember from 'ember';
 import layout from './template';
 import hostAppName from '../mixins/host-app-name';
 
-export default Component.extend(FooMixin);
-
 /**
  * @module ember-osf
  * @submodule components
