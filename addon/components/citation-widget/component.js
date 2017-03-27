@@ -1,5 +1,8 @@
 import Ember from 'ember';
 import layout from './template';
+import hostAppName from '../mixins/host-app-name';
+
+export default Component.extend(FooMixin);
 
 /**
  * @module ember-osf
@@ -28,6 +31,7 @@ const citationStyles = [
  * @param {node} node for which to fetch citations
  */
 export default Ember.Component.extend({
+    hostAppName,
     layout,
     apa: null,
     chicago: null,
