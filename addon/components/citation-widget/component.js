@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import layout from './template';
-import hostAppName from '../mixins/host-app-name';
+import hostAppName from '../../mixins/host-app-name';
 
 /**
  * @module ember-osf
