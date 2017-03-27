@@ -28,8 +28,7 @@ const citationStyles = [
  * @class citation-widget
  * @param {node} node for which to fetch citations
  */
-export default Ember.Component.extend({
-    hostAppName,
+export default Ember.Component.extend(hostAppName, {
     layout,
     apa: null,
     chicago: null,
