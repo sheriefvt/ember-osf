@@ -40,6 +40,7 @@ export default Ember.Component.extend(hostAppName, {
             HOME: 'osfHome',
             PREPRINTS: 'preprintsHome',
             REGISTRIES: 'registriesHome',
+            REVIEWS: 'reviewsHome',
             MEETINGS: 'meetingsHome'
         };
         const service = this.get('currentService');
