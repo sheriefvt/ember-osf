@@ -62,6 +62,10 @@ const osfServices = [
         url: serviceLinks.registriesHome
     },
     {
+        name: 'REVIEWS',
+        url: serviceLinks.reviewsHome
+    },
+    {
         name: 'MEETINGS',
         url: serviceLinks.meetingsHome
     }
