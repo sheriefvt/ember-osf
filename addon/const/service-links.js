@@ -31,6 +31,8 @@ const serviceLinks = {
     registriesDiscover: `${osfUrl}registries/discover/`,
     registriesHome: `${osfUrl}registries/`,
     registriesSupport: 'http://help.osf.io/m/registrations/',
+    reviewsHome: `${osfUrl}reviews/`,
+    reviewsSupport: 'http://help.osf.io/m/reviews/',
     settings: `${osfUrl}settings/`
 };
 
