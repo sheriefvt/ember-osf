@@ -30,7 +30,6 @@
                 {{/dd.menu}}
             {{/bs-dropdown}}
         </div>
-        {{submitLink}}
         {{#navbar.content classNames='navbar-right-md'}}
             {{#navbar.nav as |nav|}}
                 {{#each (build-secondary-nav-links currentService) as |navLink|}}
@@ -51,7 +50,7 @@
                             {{/nav.item}}
                         {{else}}
                             {{#nav.item}}
-                                <a href="{{navLink.href}}" onclick={{action 'click' 'link' (concat 'Navbar - ' navlink.name)}}>
+                                <a href="{{serviceSubmitLink}}" onclick={{action 'click' 'link' (concat 'Navbar - ' navlink.name)}}>
                                     {{#if (eq navLink.type 'addAPreprint')}}
                                         <span class="hidden-xs hidden-sm">
                                             {{t navLink.name}}
