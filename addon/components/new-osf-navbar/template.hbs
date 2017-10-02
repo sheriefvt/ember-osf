@@ -51,7 +51,7 @@
                             {{/nav.item}}
                         {{else}}
                             {{#nav.item}}
-                                <a href="{{navLink.href}}" onclick={{action 'click' 'link' (concat 'Navbar - ' navlink.name)}}>
+                                <a href="{{serviceSubmitLink}}" onclick={{action 'click' 'link' (concat 'Navbar - ' navlink.name)}}>
                                     {{#if (eq navLink.type 'addAPreprint')}}
                                         <span class="hidden-xs hidden-sm">
                                             {{t navLink.name}}
