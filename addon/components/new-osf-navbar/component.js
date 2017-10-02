@@ -48,6 +48,10 @@ export default Ember.Component.extend(hostAppName, AnalyticsMixin, {
         const service = this.get('currentService');
         return this.get('serviceLinks')[serviceMapping[service]];
     }),
+    submitLink: Ember.computed('pathPrefix', function () {
+       console.log(this.get('pathPrefix'));
+        return this.get('pathPrefix');
+    }),
     showSearch: false,
     actions: {
         // Toggles whether search bar is displayed (for searching OSF)
