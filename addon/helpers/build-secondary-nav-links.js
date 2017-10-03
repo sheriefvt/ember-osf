@@ -41,7 +41,7 @@ export default Ember.Helper.extend({  // Helper defined using a class, so can in
             PREPRINTS: [
                 {
                     name: 'eosf.navbar.addAPreprint',
-                    href: serviceLinks.preprintsSubmit,
+                    href: params[1],
                     type: 'addAPreprint'
                 },
                 {
