@@ -50,6 +50,7 @@ export default Ember.Component.extend(hostAppName, AnalyticsMixin, {
     }),
     serviceSubmitLink: Ember.computed('serviceLinks', 'pathPrefix', function() {
         const submitLink = this.get('serviceLinks')['preprintsSubmit'];
+        console.log(this.get('pathPrefix'));
         return Ember.isEmpty(this.get('pathPrefix')) ? submitLink : this.get('pathPrefix') + 'submit'
     }),
     showSearch: false,
