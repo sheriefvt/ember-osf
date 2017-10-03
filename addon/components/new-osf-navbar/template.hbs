@@ -33,7 +33,7 @@
 
         {{#navbar.content classNames='navbar-right-md'}}
             {{#navbar.nav as |nav|}}
-                {{#each (build-secondary-nav-links currentService) as |navLink|}}
+                {{#each (build-secondary-nav-links currentService serviceSubmitLink) as |navLink|}}
                     {{#if (and (eq currentService 'HOME') (eq navLink.type "search"))}}
                         {{#nav.item}}
                             {{!TOGGLE SEARCH BUTTON FOR HOME SERVICE}}
@@ -51,7 +51,7 @@
                             {{/nav.item}}
                         {{else}}
                             {{#nav.item}}
-                                <a href="{{serviceSubmitLink}}" onclick={{action 'click' 'link' (concat 'Navbar - ' navlink.name)}}>
+                                <a href="{{navLink.href}}" onclick={{action 'click' 'link' (concat 'Navbar - ' navlink.name)}}>
                                     {{#if (eq navLink.type 'addAPreprint')}}
                                         <span class="hidden-xs hidden-sm">
                                             {{t navLink.name}}
