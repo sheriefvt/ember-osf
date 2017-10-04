@@ -35,7 +35,7 @@
             </div>
             <div class="navbar-collapse collapse navbar-right" id="secondary-navigation">
                 <ul class="nav navbar-nav">
-                    {{#each (build-secondary-nav-links currentService serviceSubmitLink) as |navLink|}}
+                    {{#each (build-secondary-nav-links currentService addPreprintUrl) as |navLink|}}
                         {{#if (and (eq currentService 'HOME') (eq navLink.type "search"))}}
                             <li>
                                 {{!TOGGLE SEARCH BUTTON FOR HOME SERVICE}}
