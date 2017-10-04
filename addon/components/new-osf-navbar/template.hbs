@@ -33,7 +33,7 @@
 
         {{#navbar.content classNames='navbar-right-md'}}
             {{#navbar.nav as |nav|}}
-                {{#each (build-secondary-nav-links currentService addPreprintUrl) as |navLink|}}
+                {{#each (build-secondary-nav-links currentService baseServiceUrl) as |navLink|}}
                     {{#if (and (eq currentService 'HOME') (eq navLink.type "search"))}}
                         {{#nav.item}}
                             {{!TOGGLE SEARCH BUTTON FOR HOME SERVICE}}
