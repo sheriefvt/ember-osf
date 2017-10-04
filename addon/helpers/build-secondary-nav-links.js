@@ -20,6 +20,7 @@ export default Ember.Helper.extend({  // Helper defined using a class, so can in
     compute(params) { // Helpers defined using a class need a compute function
         const currentService = params[0].toUpperCase();
         const serviceSubmitLink = Ember.isEmpty(params[1]) ? serviceLinks.preprintsSubmit : params[1] + 'submit';
+        const serviceDiscoverLink = Ember.isEmpty(params[1]) ? serviceLinks.preprintsDiscover: params[1] + 'discover';
         const session = this.get('session');
         let links = Ember.Object.create({
             HOME: [
@@ -47,7 +48,7 @@ export default Ember.Helper.extend({  // Helper defined using a class, so can in
                 },
                 {
                     name: 'eosf.navbar.search',
-                    href: serviceLinks.preprintsDiscover,
+                    href: serviceDiscoverLink,
                     type: 'search'
                 },
                 {
